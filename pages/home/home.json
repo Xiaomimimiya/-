@@ -1,0 +1,7 @@
+{
+ "usingComponents": {
+    "van-grid": "/components/vantui/grid/index",
+    "van-grid-item": "/components/vantui/grid-item/index",
+    "empty":"/components/empty/empty"
+ }
+}

@@ -1,0 +1,61 @@
+{
+    "pages": [
+        "pages/home/home",
+        "pages/home/news_detail/news_detail",
+        "pages/home/news/news",
+        "pages/home/showCalendar/showCalendar",
+        "pages/home/dianfei/dianfei",
+        "pages/schoolBus/schoolBus",
+        "pages/calendar/canlendar",
+        "pages/me/me",
+        "pages/me/log_detail/log_detail",
+        "pages/partjob/partjob",
+        "pages/fabu/fabu",
+        "pages/mall/mall",
+        "pages/detail/detail",
+        "pages/pay/pay",
+        "pages/newGood/newGood",
+        "pages/myComment/myComment",
+        "pages/myOrder/myOrder",
+        "pages/seller/seller",
+        "pages/librarys/librarys",
+        "pages/campusQ&A/campusQ&A",
+        "pages/more/more",
+        "pages/lost/lost",
+        "pages/phone/phone",
+        "pages/club/club",
+        "pages/club/item/item",
+        "pages/article/article",
+        "pages/about/about"
+        
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#10A1D6",
+        "navigationBarTitleText": "校园综合服务信息集成系统",
+        "navigationBarTextStyle": "white"
+          
+    },
+    "tabBar": {
+        "color": "#00000",
+        "selectedColor": "#007ACC",
+        "borderStyle": "white",
+        "list": [
+            {
+                "selectedIconPath": "image/tab_bar/tab1-ok.png",
+                "iconPath": "image/tab_bar/tab1.png",
+                "pagePath": "pages/home/home",
+                "text": "首页"
+            },
+
+            {
+                "selectedIconPath": "image/tab_bar/tab3-ok.png",
+                "iconPath": "image/tab_bar/tab3.png",
+                "pagePath": "pages/me/me",
+                "text": "我的"
+            }
+        ]
+    },
+    "permission": {},
+    "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,25 @@
+<view class="cu-bar bg-white search fixed">
+  <view class="search-form round">
+    <text class="icon-search"></text>
+    <input type="text" placeholder="  输入你想搜索部门的电话" confirm-type="search" bindinput="search"></input>
+  </view>
+</view>
+<view class="container" wx:if="{{list.length>0}}">
+  <view class="cu-list menu" style="padding-top:100rpx">
+    <view class="cu-item" wx:for="{{list}}" wx:key="key">
+      <view class="content padding-tb-sm">
+        <view class="text-theme">{{item.name}}</view>
+        <view class="text-gray text-sm">
+          <text class="text-yellow"><text class="cuIcon-phone padding-right-xs"></text><text>{{item.number}}</text></text>
+        </view>
+      </view>
+      <view class="action">
+        <button bindtap="copy" data-phone="{{item.number}}" class="cu-btn bg-grey round margin-right-sm shadow">复制</button>
+        <button bindtap="call" data-phone="{{item.number}}" class="cu-btn bg-blue round shadow">拨打</button>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="container" wx:if="{{list.length==0}}"> 
+  <empty content="暂时没有查询该部门电话"></empty>
+</view>

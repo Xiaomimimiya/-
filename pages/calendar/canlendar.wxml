@@ -1,0 +1,2 @@
+<!--pages/calendar/canlendar.wxml-->
+<web-view src="{{src}}"></web-view>

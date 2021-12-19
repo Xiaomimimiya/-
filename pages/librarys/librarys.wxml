@@ -1,0 +1,32 @@
+<!-- 九宫格布局 -->
+<!-- <view class="weui-grids bg-white">
+
+    <block>
+        <view bindtap='goDangjian' class="weui-grid">
+            <image class="weui-grid__icon" src="/image/library/dangjian.png" />
+            <view class="weui-grid__label">博看党建</view>
+        </view> 
+    </block>
+    
+    <block>
+        <view bindtap='goNumberSearch' class="weui-grid">
+            <image class="weui-grid__icon " src="/image/library/math.png" />
+            <view class="weui-grid__label">数字资源检索</view>
+        </view>
+    </block>
+
+    <block>
+        <view bindtap='goInSearch' class="weui-grid">
+            <image class="weui-grid__icon" src="/image/library/insearch.png" />
+            <view class="weui-grid__label">馆藏检索</view>
+        </view>
+    </block>
+
+    <block>
+        <view bindtap='goChaoXing' class="weui-grid">
+            <image class="weui-grid__icon" src="/image/library/chaoxing.png" />
+            <view class="weui-grid__label">超星读书</view>
+        </view>
+    </block>
+
+</view> -->

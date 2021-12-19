@@ -1,0 +1,78 @@
+<wxs src="/utils/filter.wxs" module="filters" />
+<van-notice-bar color="#1989fa" background="#ecf9ff" left-icon="bullhorn-o" text="所有数据均来源于学校官网，如与实际有出入欢迎及时反馈！" />
+<view class="  text-center margin radius shadow bg-white padding animation-slide-top {{isFixedNav ? 'display-none' : ''}}">
+    <text class="text-shadow  text-black text-xl"> 运营服务中心联系人：xxx \n 手机：xxxx \n 座机：xxxx </text>
+</view>
+<view class="info">
+    <text class="text-shadow text-blue text-xl">当前时间： {{todayDate.week}} {{todayDate.hour}}:{{todayDate.minutes}} </text>
+</view>
+
+
+<form>
+    <view class="cu-form-group margin-top">
+        <view class="title">选择发车起点</view>
+        <picker bindchange="PickerStart" value="{{start}}" range="{{picker}}">
+            <view class="picker">
+                {{start?picker[start]:'暂未选择发车起点'}}
+            </view>
+        </picker>
+    </view>
+    <view class="cu-form-group margin-top">
+        <view class="title">选择到达终点</view>
+        <picker bindchange="PickerEnd" value="{{end}}" range="{{picker}}">
+            <view class="picker">
+                {{end?picker[end]:'暂未选择到达终点'}}
+            </view>
+        </picker>
+    </view>
+    <view class="padding flex flex-direction">
+        <button class="cu-btn  bg-blue shadow-blur  round" bindtap="check">点击查询校车运行时间</button>
+    </view>
+</form>
+
+<view class="margin cardBody radius shadow bg-white" wx:if="{{hasBus == 1}}" wx:for="{{list}}" wx:key="index">
+    <!-- 准时发车 -->
+    <block>
+        <!-- 地点/方向 -->
+        <view class=" cardTime margin-top-sm">
+            <text class="text-shadow text-red text-xl">{{item.startTime}}</text>
+        </view>
+        <view class="cardPlace margin-top-xs margin-bottom-sm text-shadow text-black text-lg">
+            <text>{{item.startSite}}</text>
+            <image class="row_image" src="/image/row.png"></image>
+            <text>{{item.endSite}}</text>
+        </view>
+        <!-- 备注 -->
+        <view class="cardInfo padding-sm text-sub">
+
+            <view>
+                <text class="cuIcon-profile text-gray"> 司机姓名：{{item.name}}</text>
+            </view>
+
+            <view class="telephone flex align-start text-sub padding-right-sm">
+                <view class=" cuIcon-phone text-gray"> 联系方式：</view>
+                <view>{{item.telephone}}</view>
+                <view class="text-sm text-red margin-left-xs" data-data="{{item.telephone}}" bindtap="copyPhone">复制</view>
+            </view>
+
+            <view>
+                <text class="cuIcon-vipcard flex-sub text-gray"> 车牌号：{{item.card}}</text>
+            </view>
+
+            <view class="flex justify-start align-center margin-top-xs">
+                <text class="cuIcon-location text-gray margin-right"> 停靠站点</text>
+                <view wx:for="{{item.site}}" wx:key="index" class="cu-tag line-olive bg-blue light round sm">{{item}}</view>
+            </view>
+            <block wx:if="{{item.remark!=''}}">
+                <text class="flex-twice text-red"> {{item.remark}}</text>
+            </block>
+        </view>
+
+    </block>
+
+</view>
+
+<view class="margin radius text-center  shadow bg-white" wx:if="{{hasBus == 0}}">
+    <view class="cu-load over" />
+</view>
+<view wx:if="{{hasBus == 1}}" class="cu-load over" />

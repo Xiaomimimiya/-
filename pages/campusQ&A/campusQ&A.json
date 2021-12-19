@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "wxParse":"/components/wxParse/wxParse"
+  },
+  "navigationBarTitleText": "校园Q&A"
+}

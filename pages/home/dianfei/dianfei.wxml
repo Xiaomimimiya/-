@@ -1,0 +1,56 @@
+
+<view class=" padding-xs flex align-center">
+    <view class="flex-sub text-center">
+        <view class="solid-bottom text-xl padding">
+            <text class="text-black text-bold">暂时链接仅可查询白云校区A1-A12栋电费</text>
+        </view>
+    </view>
+</view>
+
+
+
+<view class="cu-timeline">
+    <view class="cu-item text-green">
+        <view class="bg-gradual-green content shadow">
+            <view class="cu-capsule radius">
+                <view class="cu-tag bg-white text-red">第一步</view>
+            </view>
+            <view class="margin-top-sm text-content">
+                <view>点击右下复制电费查询链接到浏览器打开</view>
+            </view>
+        </view>
+    </view>
+    <view class="cu-item text-green">
+        <view class="bg-gradual-blue content shadow">
+            <view class="cu-capsule radius">
+                <view class="cu-tag bg-white text-red">第二步</view>
+            </view>
+            <view class="margin-top-sm text-content">
+                <view>输入账号和密码进行登录</view>
+                <view>账号：test 密码：test</view>
+            </view>
+        </view>
+    </view>
+    <view class="cu-item text-green">
+        <view class="bg-gradual-purple content shadow">
+            <view class="cu-capsule radius">
+                <view class="cu-tag bg-white text-red">第三步</view>
+            </view>
+            <view class="margin-top-sm text-content">
+                <view>1.点击报表管理</view>
+                <view>2.阶段性消费报表</view>
+                <view>3.用电部门</view>
+                <view>4.广东技术师范大学</view>
+                <view>5.白云校区</view>
+                <view>6.选择栋数</view>
+            </view>
+        </view>
+    </view>
+</view>
+
+<view class="copy_btn" bindtap="copyLink">
+    <image class="copy_img" src="/image/copy.png"></image>
+</view>
+<view class="copy_text">
+    <text>复制查询链接</text>
+</view>

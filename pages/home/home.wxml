@@ -1,0 +1,91 @@
+<!-- 顶部轮播图 -->
+<view>
+	<swiper class="square-dot swiper-multi" indicator-dots="{{true}}" indicator-color="white" indicator-active-color="#0082c8" autoplay="true" circular="true">
+		<block wx:for="{{banner}}" wx:key="banner">
+			<swiper-item>
+				<image src='{{item.picUrl}}' mode="aspectFitll" style="width:100%;height:100%;" />
+			</swiper-item>
+		</block>
+	</swiper>
+</view>
+
+
+<!-- 搜索栏 -->
+<view class="banner cu-bar search bg-red shadow shadow-lg bg-white">
+	<view class="search-form round">
+		<input type="text" class="search_input" placeholder="输入关键字搜索商品，如输入'手机'" value="{{search_content}}" bindinput="getSearchKey" confirm-type="search" bindconfirm="goSearch">
+		</input>
+		<!-- 取消按钮 -->
+		<view style="font-size: 40rpx;" bindtap="CancleSearch">
+			<text class="cuIcon-close"></text>
+		</view>
+	</view>
+	<view class="action">
+		<button class="cu-btn bg-gradual-blue shadow-blur round " bindtap="goSearch">搜索</button>
+	</view>
+</view>
+
+
+<van-grid column-num="4">
+	<view class="cu-bar bg-white solid-bottom hot_goods margin-top-xs">
+		<view class="action">
+			<text class="cuIcon-titles text-blue"></text>校园生活
+		</view>
+	</view>
+	<van-grid-item link-type="navigateTo" url="/pages/home/showCalendar/showCalendar" icon="/image/grids/Calendar.png" text="校区作息" />
+	<van-grid-item link-type="navigateTo" url="/pages/calendar/canlendar" icon="/image/grids/Calendar.png" text="学年校历" />
+	<van-grid-item link-type="navigateTo" url="/pages/home/news/news" icon="/image/grids/news.png" text="校园新闻" />
+	<van-grid-item link-type="navigateTo" url="/pages/schoolBus/schoolBus" icon="/image/grids/car.png" text="查校车" />
+
+	<van-grid-item link-type="navigateTo" url="/pages/newGood/newGood" icon="/image/grids/new.png" text="二手商品" />
+	
+	<van-grid-item link-type="navigateTo" url="/pages/home/dianfei/dianfei" icon="/image/grids/dianfei.png" text="电费" />
+	<van-grid-item link-type="navigateTo" url="/pages/partjob/partjob" icon="/image/grids/jianzhi.png" text="兼职工作" />
+	<van-grid-item link-type="navigateTo" url="/pages/lost/lost" icon="/image/grids/lost.png" text="失物招领" />
+
+	<van-grid-item link-type="navigateTo" url="/pages/phone/phone" icon="/image/grids/phone_list.png" text="电话本" />
+	<van-grid-item link-type="navigateTo" url="/pages/club/club" icon="/image/grids/shetuan.png" text="社团" />
+	<van-grid-item link-type="navigateTo" url="/pages/campusQ&A/campusQ&A" icon="/image/grids/QA.png" text="校园Q&A" />
+
+	<van-grid-item bindtap="goMore" icon="/image/grids/more.png" text="更多功能" />
+</van-grid>
+
+
+<!-- 热门推荐商品 -->
+<view class="cu-bar bg-white solid-bottom hot_goods margin-top-xs">
+	<view class="action">
+		<text class="cuIcon-titles text-blue"></text> 热门二手推荐
+	</view>
+</view>
+<scroll-view wx:if="{{goodList&&goodList.length>0}}">
+	<scroll-view wx:for="{{goodList}}" wx:key="index">
+		<view class="cu-card  article  ">
+			<view class="cu-item shadow">
+				<view data-id="{{item._id}}" bindtap="goDetail">
+					<view class="title">
+						<view class="text-cut">{{item.name}}</view>
+					</view>
+
+					<view class="content">
+						<image src="{{item.img[0]}}" mode="aspectFill"></image>
+						<view class="desc">
+							<view class="text-content"> {{item.content}}</view>
+							<view class="text-gray text-sm">
+								<view class="cu-tag bg-green light sm round" data-index="{{index}}">剩余:{{item.num}}</view>
+								<view class="cu-tag  bg-red light sm round" data-index="{{index}}">价格:￥{{item.price}}</view>
+								<!-- <text class="cuIcon-attentionfill attention margin-lr-xs"></text> 30 -->
+							</view>
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+
+	</scroll-view>
+	<view class='back-top'>
+		<image src='/image/top.png' class='goTop' hidden='{{!floorstatus}}' bindtap="goTop"></image>
+	</view>
+</scroll-view>
+<scroll-view wx:else>
+	<empty content="暂时没有热门二手推荐商品"></empty>
+</scroll-view>

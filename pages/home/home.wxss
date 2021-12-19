@@ -1,0 +1,28 @@
+/* 顶部轮播图 */
+swiper {
+  height: 400rpx;
+}
+
+.search_input{
+  font-size: 20rpx;
+  margin-left: 30rpx;
+}
+
+/* 热门推荐商品 */
+.attention{
+  margin-left: 20rpx;
+  margin-top: 1000rpx;
+}
+
+/*列表  */
+
+.back-top {
+  position: fixed;
+  right: 16rpx;
+  bottom: 150rpx;
+}
+
+.back-top image {
+  width: 70rpx;
+  height: 70rpx;
+}

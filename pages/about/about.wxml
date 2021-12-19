@@ -1,0 +1,52 @@
+<!--miniprogram/mePackage/pages/about/about.wxml-->
+<view>
+	<!-- logo & version -->
+	<view class="logo margin-top">
+		<image src="cloud://dev-homework-0gnmronme4bda654.6465-dev-homework-0gnmronme4bda654-1308239074/DCCB_EN-AU11982634575_1920x1080.jpg" class="animation-scale-up" style="animation-delay: 0.4s;"></image>
+		<view class="text-gray text-lg text-shadow margin-top">v 3.0.1</view>
+		<view class="text-bold text-gray text-lg text-shadow margin-top-xs">Copyright © 2021 milin</view>
+	</view>
+	<!-- information -->
+	<view class="shadow margin radius bg-white padding text-lg">
+		<text>欢迎使用“教育信息集成系统”小程序,本程序由个人开发制作完成,旨在为在校师生提供尽可能的方便。
+
+		现已支持功能板块:
+        [校区作息]
+        + 查询各个校区的作息时间
+        [校历]
+        + 查询每个学年的校历安排
+		[查校车]
+		+ 查询各个校区(除河源)到白云校区的班车;
+        + 班车的发车时间和班车信息
+		[校园Q&A]
+		+ 校园内的常见问题与解答;
+		[白云社团]
+		+ 查询白云校区社团的相关信息
+        [电费查询]
+		+ 查询白云校区宿舍的电费
+		[校园新闻]
+		+ 查看校园教务处发布的通告
+		[电话本]
+        + 查看白云校区相关部门的电话号码
+        [广告支持]
+        + 投放相关广告
+        [更多功能] 正在考虑开发中===> 有需要的功能可以给客服发送消息
+        
+		</text>
+
+		<!-- 联系方式 -->
+		<view class="text-sub">
+			<text>联系方式
+			</text>
+			<text class="cuIcon-service">1270285428@qq.com
+			</text>
+		</view>
+
+		<!-- 开发人员 -->
+		<view class="text-sub">
+			<text>开发人员
+			</text>
+			<text>@milin</text>
+		</view>
+	</view>
+</view>

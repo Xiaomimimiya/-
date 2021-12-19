@@ -1,0 +1,26 @@
+.copy_btn {
+    position: fixed;
+    right: 40rpx;
+    bottom: 200rpx;
+    margin-bottom: 90rpx;
+}
+
+.copy_text{
+    position: fixed;
+    right: 10rpx;
+    bottom: 200rpx;
+    margin-bottom: 60rpx;
+    color: blue;
+}
+.copy_img {
+    width: 100rpx;
+    height: 100rpx;
+}
+
+.steps-bottom.cu-steps .cu-item .num::before {
+    content: "\e668";
+    font-family: 'iconfont';
+}
+page{
+    background-color: #ffffff;
+}

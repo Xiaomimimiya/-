@@ -1,0 +1,59 @@
+.row_image {
+    height: 40rpx;
+    width: 50rpx;
+}
+/* 主体 */
+.cardBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10rpx;
+}
+
+/* 时间 */
+.cardTime {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+    align-content: center;
+    font-weight: bold;
+	width: 100%;
+}
+
+/* 地点/方向 */
+.cardPlace {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+}
+
+.cardPlace image {
+    height: 40rpx;
+    width: 50rpx;
+}
+
+.cardPlace text {
+    font-weight: bold;
+    font-family: "Microsoft YaHei";
+}
+
+/* 备注信息 */
+.cardInfo {
+    border-bottom-left-radius: 10rpx;
+    border-bottom-right-radius: 10rpx;
+    width: 100%;
+	background-color: #f3f3f3;
+}
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+   margin-top: 10rpx;
+}
+.telephone{
+    width: 100%;
+}

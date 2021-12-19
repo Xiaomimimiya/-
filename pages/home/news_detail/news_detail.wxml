@@ -1,0 +1,14 @@
+
+<view class="margin-sm padding-sm bg-white radius shadow">
+    <view class="solids-bottom margin-bottom-sm notice_title" >
+        <view class="text-blod  text-green text-xl margin-bottom-sm">
+            {{notice.title}}
+        </view>
+        <view class="padding-bottom text-black">  作者：{{notice.author}}</view>
+    </view>
+    <!-- 引入新组件 来进行富文本解析 -->
+    <wxParse user-select nodes="{{contentInfo}}"></wxParse>
+    <view  class="copy_btn" bindtap="copyLink">
+       <image class="copy_img" src="/image/copyLink.png"></image>
+</view>
+</view>

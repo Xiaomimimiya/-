@@ -1,0 +1,40 @@
+<!--pages/zutuan/zutuan.wxml-->
+<wxs src="../../utils/filter.wxs" module="filters" />
+<van-notice-bar color="#FF0000" background="#ecf9ff" left-icon="warning-o" text="请注意仔细甄别兼职和工作信息，避免上当受骗，本平台只负责信息发布，对兼职和工作中的发生的纠纷不负责。" />
+
+<view wx:for="{{joblist}}" wx:key="index" class="zutuan-card margin-bottom margin-top-xs padding bg-white shadow">
+    <!-- 左侧-头像、昵称、认证状态、组团类型 -->
+    <view class="left margin-right-sm">
+        <view class="top">
+            <view class="cu-tag radius line-blue">{{item.type}}</view>
+        </view>
+        <view class="main">
+            <image src="{{item.image}}"></image>
+            <view class="text-black text-shadow text-sub text-cut text-xs margin-top">发布者：{{item.name}}</view>
+        </view>
+    </view>
+    <!-- 右侧-组团信息 -->
+    <view class="right">
+        <view class="flex align-end text-sub">
+            <view class="text-black">人数需求：</view>
+            <view>{{item.number}}</view>
+        </view>
+        <view class="info flex align-start text-sub padding-right-sm">
+            <view class="text-black" style="white-space: nowrap;">联系方式：</view>
+            <view>{{item.phone}}</view>
+            <view class="text-sm text-blue margin-left-xs" data-data="{{item.phone}}" bindtap="copyToClipboard">复制</view>
+        </view>
+        <view class="info flex align-start text-sub padding-right-sm">
+            <view class="text-black" style="white-space: nowrap;">详情：</view>
+            <view>{{item.detail}}</view>
+            <!-- <view class="text-red text-sub margin-left-sm">详情</view> -->
+        </view>
+        <van-divider />
+        <view class="text-gray text-sm">发布时间：{{item.sendtime?filters.formatDate(item.sendtime):''}}</view>
+        <view class="text-red text-sm">截止时间：{{ item.endtime?filters.formatDate(item.endtime):''}}</view>
+    </view>
+    <image wx:if="{{newDateTime<item.endtime?false:true}}" class="expire" mode="aspectFit" src="/image/expire.png"></image>
+</view>
+<view class="margin-bottom padding-lr" style="margin-top: 40rpx;">
+    <button class="cu-btn bg-blue block lg " bindtap="release">发布兼职信息</button>
+</view>

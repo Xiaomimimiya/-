@@ -1,0 +1,19 @@
+
+.logo{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.logo image{
+	width: 400rpx;
+	height: 400rpx;
+	border-radius: 50%;
+	border: 2px solid #fff;
+	box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.logo view{
+	/* color: grey; */
+	opacity: 0.6;
+}

@@ -1,0 +1,135 @@
+<!--pages/about/log/log.wxml-->
+<view class="cu-timeline">
+  <view class="cu-item text-blue">
+    <view class="bg-white content shadow">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-blue">v3.0.1</view>
+        <view class="cu-tag line-white">2021/12/14</view>
+      </view>
+      <view class="margin-top-sm text-content">
+        <view>1.对整个界面和内容逻辑进行版本迭代和更新</view>
+        <view>2.增加社团和电话本</view>
+        <view>3.完善其他相关界面内容</view>
+      </view>
+    </view>   
+  </view>
+
+  <view class="cu-item text-blue">
+    <view class="bg-white content shadow">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-blue">v2.0.1</view>
+        <view class="cu-tag line-white">2021/12/10</view>
+      </view>
+      <view class="margin-top-sm text-content">
+        <view>1.进一步对九宫格内容进行调整和完善</view>
+        <view>2.增加回到页面顶部的功能</view>
+        <view>3.完善相关界面内容</view>
+      </view>
+    </view>   
+  </view>
+
+   <view class="cu-item text-blue">
+    <view class="bg-white content shadow">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-blue">v1.0.8</view>
+        <view class="cu-tag line-white">2021/12/04</view>
+      </view>
+      <view class="margin-top-sm text-content">
+        <view>1.增加新闻、校车</view>
+        <view>2.对两个界面的UI进行调整</view>
+        <view>3.完善校车查询的逻辑和校车线路的运行情况</view>
+      </view>
+    </view>   
+  </view>
+
+  <view class="cu-item text-blue">
+    <view class="bg-white content shadow">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-blue">v1.0.7</view>
+        <view class="cu-tag line-white">2021/12/04</view>
+      </view>
+      <view class="margin-top-sm text-content">
+        <view>1.在九宫格添加校历和新闻界面</view>
+        <view>2.对用户微信头像和昵称进行显示</view>
+      </view>
+    </view>   
+  </view>
+
+  <view class="cu-item text-blue">
+    <view class="bg-white content shadow">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-blue">v1.0.6</view>
+        <view class="cu-tag line-white">2021/11/22</view>
+      </view>
+      <view class="margin-top-sm text-content">
+        <view>1.对发布界面进行优化</view>
+        <view>2.增加发布商品的地址选项</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="cu-item text-blue">
+    <view class="bg-gradual-pink content shadow">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-blue">v1.0.5</view>
+        <view class="cu-tag line-white">2021/11/12</view>
+      </view>
+      <view class="margin-top-sm text-content">
+        <view>1.完善首页九宫格功能</view>
+        <view>2.增加更新日志</view>
+        <view>3.增加热门推荐功能</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="cu-item text-blue">
+    <view class="bg-grey content shadow">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-blue">v1.0.4</view>
+        <view class="cu-tag line-white">2021/11/08</view>
+      </view>
+      <view class="margin-top-sm text-content">
+        <view>1.添加退出登录功能</view>
+        <view>2.完善购物相关逻辑</view>
+      </view>
+    </view>
+  </view>
+  
+  <view class="cu-item text-blue">
+    <view class="bg-blue content shadow">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-blue">v1.0.3</view>
+        <view class="cu-tag line-white">2021/11/01</view>
+      </view>
+      <view class="margin-top-sm text-content">
+        <view>1.对界面进行美化</view>
+        <view>2.增加反馈界面</view>
+        <view>3.对轮播图进行优化</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="cu-item text-blue">
+    <view class="bg-brown content shadow">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-blue">v1.0.2</view>
+        <view class="cu-tag line-white">2021/10/25</view>
+      </view>
+      <view class="margin-top-sm text-content">
+        <view>1.添加商品检索功能</view>
+        <view>2.添加清理缓存</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="cu-item text-blue">
+    <view class="bg-green content shadow">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-blue">v1.0.1</view>
+        <view class="cu-tag line-white">2021/10/14</view>
+      </view>
+      <view class="margin-top-sm text-content">1.0版本上线</view>
+    </view>
+  </view>
+
+</view>

@@ -1,0 +1,22 @@
+<scroll-view scroll-x class="bg-white nav">
+  <view class="flex ">
+    <view class="cu-item flex-sub {{index==TabCur?'bg-blue cur':''}}" wx:for="{{list}}" wx:key="index" bindtap="tabSelect" data-id="{{index}}">
+      {{item}}
+    </view>
+  </view>
+</scroll-view>
+
+
+<view class="cu-list shadow menu bg-white text-sub sm-border">
+  <view wx:for="{{notice}}" wx:key="index" class="cu-item arrow" data-flag="{{item._id}}" bindtap="showNotice">
+    <view class="content padding-top-sm padding-bottom-sm">
+      <text>{{item.title}}</text>
+      <view class="text-gray text-sm">发布时间: {{item.date}}</view>
+    </view>
+  </view>
+  <view class="cu-load over" />
+  <view class='back-top'>
+		<image src='/image/top.png' class='goTop' hidden='{{!floorstatus}}' bindtap="goTop"></image>
+	</view>
+
+</view>

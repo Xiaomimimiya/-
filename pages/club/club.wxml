@@ -1,0 +1,38 @@
+<view class="container" style="top:{{customBar}}px">
+  <view class="cu-bar bg-white search fixed" style="top:{{customBar}}px">
+    <view class="action">
+      <picker mode="selector" range="{{category}}" range-key="name" bindchange="selectCategory" value="{{cid}}">
+        <text class="padding-right-xs">{{category[cid].name}}</text>
+        <text class="cuIcon-triangledownfill"></text>
+      </picker>
+    </view>
+    <view class="search-form round">
+      <text class="icon-search"></text>
+      <input type="text" placeholder="    搜索社团名称" confirm-type="search" bindinput="searchInput"></input>
+    </view>
+    <view class="action">
+      <button class="cu-btn bg-theme round" bindtap="search">搜索</button>
+    </view>
+  </view>
+  <view style="margin-top:120rpx">
+    <view wx:if="{{list.length>0}}">
+      <view class="cu-list card-menu menu-avatar ">
+        <view class="cu-item " wx:for="{{list}}" wx:key="key">
+
+          <image class="cu-avatar lg" src="{{item.logo}}" bindtap="showItem" data-index="{{index}}"></image>
+          <view class="content" bindtap="showItem" data-index="{{item._id}}">
+            <view class="text-theme">
+              {{item.name}}
+              <text class="text-xs padding-left-sm text-gray">[{{item.category}}类]</text>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="cu-load over"></view>
+    </view>
+    <view wx:else>
+      <empty content="暂时没有找到社团"></empty>
+    </view>
+   
+  </view>
+</view>

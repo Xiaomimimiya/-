@@ -1,0 +1,108 @@
+{
+    "setting": {},
+    "condition": {
+        "plugin": {
+            "list": []
+        },
+        "game": {
+            "list": []
+        },
+        "gamePlugin": {
+            "list": []
+        },
+        "miniprogram": {
+            "list": [
+                {
+                    "name": "pages/home/news_detail/news_detail",
+                    "pathName": "pages/home/news_detail/news_detail",
+                    "query": "id=c462c81061b4194101a98fbd4a8b0cb0",
+                    "scene": null
+                },
+                {
+                    "name": "pages/newGood/newGood",
+                    "pathName": "pages/newGood/newGood",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/fabu/fabu",
+                    "pathName": "pages/fabu/fabu",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/home/home",
+                    "pathName": "pages/home/home",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/lost/lost",
+                    "pathName": "pages/lost/lost",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/phone/phone",
+                    "pathName": "pages/phone/phone",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/club/club",
+                    "pathName": "pages/club/club",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/club/item/item",
+                    "pathName": "pages/club/item/item",
+                    "query": "id=0448022461b72bd2021f43d340e69bb1",
+                    "scene": null
+                },
+                {
+                    "name": "pages/home/showCalendar/showCalendar",
+                    "pathName": "pages/home/showCalendar/showCalendar",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/seller/seller",
+                    "pathName": "pages/seller/seller",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/about/about",
+                    "pathName": "pages/about/about",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/home/dianfei/dianfei",
+                    "pathName": "pages/home/dianfei/dianfei",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/partjob/partjob",
+                    "pathName": "pages/partjob/partjob",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/home/news/news",
+                    "pathName": "pages/home/news/news",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/me/log_detail/log_detail",
+                    "pathName": "pages/me/log_detail/log_detail",
+                    "query": "",
+                    "scene": null
+                }
+            ]
+        }
+    }
+}

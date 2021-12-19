@@ -1,0 +1,17 @@
+
+.QAList{
+    height: 100vh;
+  }
+  
+  .QA{
+
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  
+  .line{
+    width: 100%;
+    height: 1px;
+    background-color: gray;
+  }

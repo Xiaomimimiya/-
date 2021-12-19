@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "van-divider":"/components/vantui/divider/index",
+    "van-notice-bar": "/components/vantui/notice-bar/index"
+  },
+  "navigationBarTitleText": "兼职与工作"
+}

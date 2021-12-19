@@ -1,0 +1,50 @@
+<view class="container">
+  <view class="header text-center padding">
+    <image class="bg" src="{{club.logo}}" mode="widthFix"></image>
+    <view>
+      <image class="logo shadow-blur" mode="widthFix" src="{{club.logo}}"></image>
+    </view>
+    <view class="padding-sm">
+      <view><text class="text-white bg-blue name shadow-blur">{{club.name}}</text></view>
+    </view>
+    <view class="share-btn options">
+      <button class="cu-btn text-theme padding-xs bg-white sm" open-type='share'>
+        <text class="icon-share"></text><text class="padding-left-xs">分享</text>
+      </button>
+    </view>
+    <view class="edit-btn options">
+      <button class="cu-btn text-yellow padding-xs bg-white sm" bindtap="edit">
+        <text class="icon-edit"></text><text class="padding-left-xs">编辑</text>
+      </button>
+    </view>
+  </view>
+  <view class="info">
+    <view class="cu-list menu sm-border">
+      <view class="cu-item">
+        <view class="action">
+          <text class="cuIcon-sort text-blue"></text>
+          <text class="text-blue"> 社团类型　</text>
+        </view>
+        <view class="content">
+          <text class="text-black"> {{club.category}}</text>
+        </view>
+      </view>
+      <view class="cu-item">
+        <view class="action">
+          <text class="cuIcon-phone text-blue"></text>
+          <text class="text-blue"> 联系方式　</text>
+        </view>
+        <view class="content">
+          <text class="text-black">{{club.phone}}</text>
+          <view class="copy" bindtap="copy">
+            <text class="cuIcon-copy"></text>
+          </view>
+        </view>
+
+      </view>
+    </view>
+  </view>
+  <view class="bg-white padding margin-top imagesize">
+    <image src="{{club.desc}}" mode="widthFix"></image>
+  </view>
+</view>
